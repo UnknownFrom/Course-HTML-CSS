@@ -7,73 +7,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="resume, html">
     <meta name="description" , content="Сайт - резюме Павла">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts_style.css">
+    <link rel="stylesheet" href="styles/links.css">
+    <link rel="stylesheet" href="styles/label_and_text.css">
     <title>Document</title>
 </head>
 
-<body>
-    <img src="https://www.pngmart.com/files/11/Sad-Pepe-The-Frog-PNG-Free-Download.png" alt="" width="150">
-    <br>
-    <h1>Павел</h1>
-    <p>Просто <strong>студент</strong>, который хочет выучить ещё один <del>язык программирования</del>, точнее
-        <strong><em>язык разметки</em></strong>
-    </p>
+<body class="container">
+    <div class="flex-row">
+        <div class="box-avatar center ">
+            <img class="avatar " src="frog.png" alt="Аватар">
+        </div>
+        <div class="about">
+            <h1>Павел</h1>
+            <article>
+                <p>Просто <strong>студент</strong>, который хочет выучить ещё один <del>язык программирования</del>, точнее
+                    <strong><em>язык разметки</em></strong>
+                </p>
+            </article>
+            <div class="pos-box-bottom">
+                <strong>
+                    <h4>Список социальных сетей</h4>
+                </strong>
+                <p>
+                    <img src="https://logos-download.com/wp-content/uploads/2016/09/GitHub_logo.png" alt="Иконка GitHub" width="15">
+                    <a href="https://github.com/UnknownFrom" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
+    </div>
 
-    <h2><strong>Мои хобби</strong></h2>
-    <ul>
-        <li>Программирование</li>
-        <li>Спорт</li>
-        <li>Игры</li>
-    </ul>
+    <div class="card hobby-list">
+        <h2><strong>Мои хобби</strong></h2>
+        <ul class="list">
+            <li>Программирование</li>
+            <li>Спорт</li>
+            <li>Игры</li>
+        </ul>
+    </div>
 
-    <h2><strong>Опыт работы</strong></h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ITDT</td>
-                <td>Джуниор</td>
-                <td>2021</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="card exp-work">
+        <h2><strong>Опыт работы</strong></h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ITDT</td>
+                    <td>Джуниор</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Сенлер</td>
+                    <td>Стажёр</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Завод</td>
+                    <td>Работяга</td>
+                    <td>2000-2022</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
 
     <hr>
-    <strong>
-        <h3>Список социальных сетей</h3>
-    </strong>
-    <p>
-        <img src="https://logos-download.com/wp-content/uploads/2016/09/GitHub_logo.png" alt="Иконка GitHub" width="15">
-        <a href="https://github.com/UnknownFrom" target="_blank">GitHub</a>
-    </p>
 
-    <hr>
+    <div class="card">
+        <h2><strong>Связаться со мной</strong></h2>
+        <form>
+            <div class="flex-row">
+                <div class="block">
+                    <label class="label" for="name">Ваше имя</label>
+                    <br>
+                    <input type="text" id="name" placeholder="Введите имя" class="text-field">
+                </div>
 
-    <h2><strong>Связаться со мной</strong></h2>
-    <form>
-        <div>
-            <label for="name">Имя</label>
-            <input type="text" id="name" placeholder="Введите имя">
-        </div>
+                <div class="block">
+                    <label class="label" for="email">Ваш email</label>
+                    <br>
+                    <input type="email" id="email" placeholder="Введите email" class="text-field">
+                </div>
+            </div>
 
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
+            <div class="block">
+                <label class="label" for="message">Ваше сообщение</label>
+                <br>
+                <textarea id="message" cols="auto" rows="5" placeholder="Введите сообщение..." class="text-field"></textarea>
+            </div>
 
-        <div>
-            <label for="message">Сообщение</label>
-            <br>
-            <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
-        </div>
-
-        <button type="submit">Отправить</button>
-    </form>
+            <button class="btn" type="submit">Отправить</button>
+        </form>
+    </div>
 
 </body>
 

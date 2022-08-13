@@ -1,0 +1,35 @@
+.label {
+    font-size: medium;
+}
+
+.text-field {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 8px 8px 8px 3px;
+    margin: 8px 8px 8px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+    font-family: inherit;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    margin: 8px;
+}
+
+.flex-row {
+    width: 100%;
+    display: inline-flex;
+}
+
+.pos-box-bottom {
+    margin-top: 30px;
+}
+
+@media(max-width:800px) {
+    .flex-row {
+        display: block;
+    }
+}
